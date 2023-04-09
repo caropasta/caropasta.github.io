@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>the gentle indifference of the world</title>
+        <script defer src="script.js"></script>
+        <style>
+            *, *::before, *::after {
+                box-sizing: border-box;
+                font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
+                font-size: 20px;
+            }
+            body {
+                margin-top: 80px;
+                margin-left: 100px;
+            }
+            .question {
+                font-weight: bold;
+            }
+            .opt {
+                background-color: transparent;
+                border: none;
+                color: rgb(222, 110, 102);
+            }
+            .opt:hover {
+                color: rgb(121, 219, 204);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div id="question" class="question">question</div>
+            <br>
+            <div id="options" class="button-grid">
+                <button class="opt">option 1</button>
+                <button class="opt">option 2</button>
+            </div>
+        </div>
+    </body>
+</html>
