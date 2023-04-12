@@ -1,23 +1,143 @@
 <!DOCTYPE html>
-    <html>
+<html>
     <head>
         <title>the gentle indifference of the world</title>
         <style>
-        body {
-            background-color:rgb(233, 243, 255);
-            background-image: url(parkinglot.jpg);
-            background-size: cover;
-            font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
-            color: white;
-            margin-top: 80px;
-            margin-left: 100px;
-        }
+            *, *::before, *::after {
+                box-sizing: border-box;
+                font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
+                font-size: 20px;
+            }
+
+            body {
+                margin-top: 80px;
+                margin-left: 125px;
+                margin-right: 125px;
+            }
+            
+            .header {
+                font-size: 80px;
+                text-align: center;
+            }
+
+            .subtitle {
+                font-size: 25px;
+                text-align: right;
+                padding-right: 225px;
+            }
+
+            img {
+                width: 200px;
+            }
+
+            .gallery, .years, .figure-header {
+                text-align: center;
+            }
+
+            .name {
+                font-size: 25pt;
+            }
+
+            .description {
+                padding-left: 180px;
+                padding-right: 180px;
+            }
+
+            td {
+                padding: 20px;
+            }
         </style>
     </head>
-
     <body>
-        <h1>the gentle indifference of the world</h1>
-        <p>a text game about being alive</p>
-    </body>
+        <div class="top" style="background-color: rgb(223, 243, 253); padding: 10px">
+            <div class="header">the gentle indifference of the world</div>
+            <div class="subtitle">a text game by Caroline Pastrano</div>
+        </div>
+            
+        <br><br>
 
-    </html>
+        <p style="line-height: 0.9;"><span class="what-is" style="font-size: 25pt; padding-left: 10px;">what is<br></span>
+            <span class="existentialism" style="font-size: 80pt; font-style: italic;">EXISTENTIALISM?</span>
+        </p>
+            
+        <div class="intro" style="padding-top: 20px; padding-left: 30px; padding-right: 30px; text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit nisi, blandit at metus nec, imperdiet pellentesque diam. Vestibulum feugiat arcu a mi mattis egestas a nec lectus. Sed a orci sed augue aliquam luctus. Fusce vestibulum nisi magna, ac sodales justo posuere a. Etiam ac orci eget nulla porta vehicula. Morbi sodales massa quis cursus lacinia. Fusce vestibulum suscipit erat ut pellentesque. Aenean placerat porta ullamcorper. Aliquam ut tortor nibh. Morbi ac dolor dui.
+
+            Aenean aliquet, arcu sit amet sollicitudin pellentesque, metus neque dignissim ex, ac sollicitudin ipsum turpis et ex. Maecenas congue metus quis massa molestie, vitae iaculis nibh dictum. Fusce at lobortis purus, non consectetur ligula. Morbi convallis eu urna a lobortis. Nunc pulvinar tortor at neque eleifend hendrerit. Ut maximus turpis felis. Suspendisse ultrices sem in pharetra varius. Quisque lectus neque, euismod eu est at, mollis aliquet orci. Suspendisse pulvinar volutpat egestas.
+            
+            Mauris sed finibus nisi, eget ultrices arcu. Nam a laoreet nibh. Praesent dignissim tortor risus. Pellentesque nec sapien rhoncus, feugiat erat in, mollis ligula. Nulla facilisi. Aenean bibendum posuere nunc nec ultrices. Phasellus lacinia volutpat tellus a maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent egestas facilisis nulla, eu luctus nisi tincidunt bibendum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam finibus purus turpis, non pellentesque dolor suscipit sit amet. Nunc sed nibh sapien. Proin et enim vel lacus fermentum ultricies. Proin scelerisque dictum lectus, sed placerat felis auctor et. Ut vel neque posuere, tristique tortor ut, accumsan leo.</div>
+        <br><br>
+        
+        <div class="figures" style="text-align: center;">
+            <div class="figures-title" style="padding-left: 10px; padding-bottom: 10px;">
+                <span class="the-figures" style="font-size: 30pt;">the figures </span><span class="font-size: 15pt;">(click to learn more)</div>
+            </div>
+            <div id="photos" class="gallery">
+                <a href="#kierkegaard" title="Kierkegaard"><img src="people/kierkegaard.PNG"></a>
+                <a href="#nietzsche" title="Nietzsche"><img src="people/nietzsche.PNG"></a>
+                <a href="#heidegger" title="Heidegger"><img src="people/heidegger.PNG"></a>
+                <a href="#sartre" title="Sartre"><img src="people/sartre.PNG"></a>
+                <a href="#camus" title="Camus"><img src="people/camus.PNG"></a>
+                <a href="#beauvoir" title="Beauvoir"><img src="people/beauvoir.PNG"></a>
+            </div>
+        </div>
+        <br><br>
+
+        <div class="all-figures">
+            
+            <table class="description">
+                <tr>
+                    <td><img src="people/kierkegaard.PNG"></td>
+                    <td><span id="kierkegaard" class="figure-header"><span class="name">S&#248;ren Kierkegaard </span><span class="years">(1813&#8211;55)</span></span><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit nisi, blandit at metus nec, imperdiet pellentesque diam. Vestibulum feugiat arcu a mi mattis egestas a nec lectus. Sed a orci sed augue aliquam luctus. Fusce vestibulum nisi magna, ac sodales justo posuere a. Etiam ac orci eget nulla porta vehicula. Morbi sodales massa quis cursus lacinia. Fusce vestibulum suscipit erat ut pellentesque. Aenean placerat porta ullamcorper. Aliquam ut tortor nibh. Morbi ac dolor dui. Aenean aliquet, arcu sit amet sollicitudin pellentesque, metus neque dignissim ex, ac sollicitudin ipsum turpis et ex.</td>
+                </tr>
+            </table>
+            <br>
+
+            
+            <table class="description">
+                <tr>
+                    <td><img src="people/nietzsche.png"></td>
+                    <td><span id="nietzsche" class="figure-header"><span class="name">Friedrich Nietzsche </span><span class="years">(1844&#8211;1900)</span></span><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit nisi, blandit at metus nec, imperdiet pellentesque diam. Vestibulum feugiat arcu a mi mattis egestas a nec lectus. Sed a orci sed augue aliquam luctus. Fusce vestibulum nisi magna, ac sodales justo posuere a. Etiam ac orci eget nulla porta vehicula. Morbi sodales massa quis cursus lacinia. Fusce vestibulum suscipit erat ut pellentesque. Aenean placerat porta ullamcorper. Aliquam ut tortor nibh. Morbi ac dolor dui. Aenean aliquet, arcu sit amet sollicitudin pellentesque, metus neque dignissim ex, ac sollicitudin ipsum turpis et ex.</td>
+                </tr>
+            </table>
+            <br>
+
+            <table class="description">
+                <tr>
+                    <td><img src="people/heidegger.png"></td>
+                    <td><span id="heidegger" class="figure-header"><span class="name">Martin Heidegger </span><span class="years">(1889&#8211;1976)</span></span><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit nisi, blandit at metus nec, imperdiet pellentesque diam. Vestibulum feugiat arcu a mi mattis egestas a nec lectus. Sed a orci sed augue aliquam luctus. Fusce vestibulum nisi magna, ac sodales justo posuere a. Etiam ac orci eget nulla porta vehicula. Morbi sodales massa quis cursus lacinia. Fusce vestibulum suscipit erat ut pellentesque. Aenean placerat porta ullamcorper. Aliquam ut tortor nibh. Morbi ac dolor dui. Aenean aliquet, arcu sit amet sollicitudin pellentesque, metus neque dignissim ex, ac sollicitudin ipsum turpis et ex.</td>
+                </tr>
+            </table>
+            <br>
+
+            <table class="description">
+                <tr>
+                    <td><img src="people/sartre.png"></td>
+                    <td><span id="sartre" class="figure-header"><span class="name">Jean-Paul Sartre </span><span class="years">(1905&#8211;80)</span></span><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit nisi, blandit at metus nec, imperdiet pellentesque diam. Vestibulum feugiat arcu a mi mattis egestas a nec lectus. Sed a orci sed augue aliquam luctus. Fusce vestibulum nisi magna, ac sodales justo posuere a. Etiam ac orci eget nulla porta vehicula. Morbi sodales massa quis cursus lacinia. Fusce vestibulum suscipit erat ut pellentesque. Aenean placerat porta ullamcorper. Aliquam ut tortor nibh. Morbi ac dolor dui. Aenean aliquet, arcu sit amet sollicitudin pellentesque, metus neque dignissim ex, ac sollicitudin ipsum turpis et ex.</td>
+                </tr>
+            </table>
+            <br>
+
+            <table class="description">
+                <tr>
+                    <td><img src="people/camus.png"></td>
+                    <td><span id="camus" class="figure-header"><span class="name">Albert Camus </span><span class="years">(1913&#8211;60)</span></span><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit nisi, blandit at metus nec, imperdiet pellentesque diam. Vestibulum feugiat arcu a mi mattis egestas a nec lectus. Sed a orci sed augue aliquam luctus. Fusce vestibulum nisi magna, ac sodales justo posuere a. Etiam ac orci eget nulla porta vehicula. Morbi sodales massa quis cursus lacinia. Fusce vestibulum suscipit erat ut pellentesque. Aenean placerat porta ullamcorper. Aliquam ut tortor nibh. Morbi ac dolor dui. Aenean aliquet, arcu sit amet sollicitudin pellentesque, metus neque dignissim ex, ac sollicitudin ipsum turpis et ex.</td>
+                </tr>
+            </table>
+            <br>
+
+            <table class="description">
+                <tr>
+                    <td><img src="people/beauvoir.png"></td>
+                    <td><span id="beauvoir" class="figure-header"><span class="name">Simone de Beauvoir </span><span class="years">(1908&#8211;86)</span></span><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit nisi, blandit at metus nec, imperdiet pellentesque diam. Vestibulum feugiat arcu a mi mattis egestas a nec lectus. Sed a orci sed augue aliquam luctus. Fusce vestibulum nisi magna, ac sodales justo posuere a. Etiam ac orci eget nulla porta vehicula. Morbi sodales massa quis cursus lacinia. Fusce vestibulum suscipit erat ut pellentesque. Aenean placerat porta ullamcorper. Aliquam ut tortor nibh. Morbi ac dolor dui. Aenean aliquet, arcu sit amet sollicitudin pellentesque, metus neque dignissim ex, ac sollicitudin ipsum turpis et ex.</td>
+                </tr>
+            </table>
+            <br>
+        </div>
+    </body>
+</html>
