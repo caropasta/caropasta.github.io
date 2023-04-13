@@ -41,6 +41,12 @@ function selectOption(option) {
     if (nextID === -4) {
         window.location.href = "nochildren.html";
     }
+    if (nextID === -5) {
+        window.location.href = "indifference.html";
+    }
+    if (nextID === -6) {
+        window.location.href = "bignothing.html";
+    }
     display(nextID)
 }
 
@@ -98,7 +104,7 @@ const stages = [
         options: [
             {
                 text: ">>",
-                nextText: 5
+                nextText: 7
             }
         ]
     },
@@ -139,6 +145,13 @@ const stages = [
             {
                 text: "> Sign up for advanced classes.",
                 nextText: 9
+            },
+            {
+                text: " "
+            },
+            {
+                text: "> I don't want to do extra work.",
+                nextText: 66
             }
         ]
     },
@@ -464,7 +477,7 @@ const stages = [
             }
         ]
     },
-    // END  this one is my favorite tbh
+    // END  this one is still my favorite tbh
     {
         id: 39,
         question: "You decide that you don't quite want to take that step just yet. You're doing fine on your own, financially stable and with a good work life balance. You'll keep doing what you're doing for a little bit.",
@@ -746,76 +759,284 @@ const stages = [
     },
     // END
 
-    // {
-    //     id: 66,
-    //     question: "",
-    //     options: [
-    //         {
-    //             text: ">>",
-    //             nextText: 67
-    //         }
-    //     ]
-    // },
-    // {
-    //     id: 67,
-    //     question: "",
-    //     options: [
-    //         {
-    //             text: ">>",
-    //             nextText: 68
-    //         }
-    //     ]
-    // },
-    // {
-    //     id: 68,
-    //     question: "",
-    //     options: [
-    //         {
-    //             text: ">>",
-    //             nextText: 69
-    //         }
-    //     ]
-    // },
-    // {
-    //     id: 69,
-    //     question: "",
-    //     options: [
-    //         {
-    //             text: ">>",
-    //             nextText: 70
-    //         }
-    //     ]
-    // },
-    // {
-    //     id: 70,
-    //     question: "",
-    //     options: [
-    //         {
-    //             text: ">>",
-    //             nextText: 71
-    //         }
-    //     ]
-    // },
-    // {
-    //     id: 71,
-    //     question: "",
-    //     options: [
-    //         {
-    //             text: ">>",
-    //             nextText: 72
-    //         }
-    //     ]
-    // },
-    // {
-    //     id: 72,
-    //     question: "",
-    //     options: [
-    //         {
-    //             text: ">>",
-    //             nextText: 73
-    //         }
-    //     ]
-    // },
+    {
+        id: 66,
+        question: "Well, that's fine. You have the feeling that putting a lot of effort into school is kind of overrated anyway. You graduate with decent grades, and you soon manage to find an entry level job to start at.",
+        options: [
+            {
+                text: ">> Get older.",
+                nextText: 67
+            }
+        ]
+    },
+    {
+        id: 67,
+        question: "After a few months, you find that you're really bored here. You don't really feel like you're getting anywhere with your life, and you can't help but wonder if there's something better out there.",
+        options: [
+            {
+                text: ">> Get older.",
+                nextText: 68
+            }
+        ]
+    },
+    {
+        id: 68,
+        question: "One day, you see an ad for a rabbit stylist apprenticeship. You're not really sure what that means, but you kind of hate your current job, so you figure you may as well give it a try.",
+        options: [
+            {
+                text: ">> Get older.",
+                nextText: 69
+            }
+        ]
+    },
+    {
+        id: 69,
+        question: "You meet up with the rabbit stylist. He tells you that he has been styling rabbits for 50 years, but has decided that it's time to finally retire and pass the torch to someone else.",
+        options: [
+            {
+                text: ">> Get older.",
+                nextText: 70
+            }
+        ]
+    },
+    {
+        id: 70,
+        question: "You spend the next few months diligently learning all that you can about styling rabbits, and you find that you actually kind of have a natural knack for it. You soon find that you've earned the trust of your mentor's most loyal clients. You're unsure at first, but he decides that he has faith that you will uphold his legacy properly, and he retires, officially handing over the reins of the business to you.",
+        options: [
+            {
+                text: ">> Get older.",
+                nextText: 71
+            }
+        ]
+    },
+    {
+        id: 71,
+        question: "This job is certainly a lot more engaging than what you were doing before. Yet, after a while, you realize that it's not quite smooth sailing all the way either. You have to do all of your own business taxes, and some clients have started arguing with you about your rates. You're starting to wonder if this may be too much for you to handle.",
+        options: [
+            {
+                text: "> Keep at it.",
+                nextText: 72
+            },
+            {
+                text: " "
+            },
+            {
+                text: "> Find a different job.",
+                nextText: 84
+            },
+        ]
+    },
+    {
+        id: 72,
+        question: "But you decide to persist. You figure that the struggle is simply a part of the process, and it will all get better soon.",
+        options: [
+            {
+                text: ">> Get older.",
+                nextText: 73
+            }
+        ]
+    },
+    {
+        id: 73,
+        question: "You keep going with the business, and months soon turn into years. One day, you realize that all those things that had felt insurmountable in the beginning are now hardly worth worrying about.",
+        options: [
+            {
+                text: ">> Get older.",
+                nextText: 74
+            }
+        ]
+    },
+    {
+        id: 74,
+        question: "Soon, you've adopted a couple of rabbits of your own, and you start competing in rabbit shows in addition to your work. At some shows, they sweep the awards, and at others, they don't, but it's not a big deal to you either way because you're always excited to just meet some fellow rabbit enthusiasts.",
+        options: [
+            {
+                text: ">> Get older.",
+                nextText: 75
+            }
+        ]
+    },
+    {
+        id: 75,
+        question: "Years go by, and your business is still thriving. Some of your regulars have stuck with you since the very beginning, and you regard them fondly as friends now. You're now qualified enough to start judging the rabbit shows, and you soon find that you've truly become a respected member of your community.",
+        options: [
+            {
+                text: ">> Get older.",
+                nextText: 76
+            }
+        ]
+    },
+    {
+        id: 76,
+        question: "One day, you're headed back to your car late after a show. You slowly get the feeling that you're being followed.",
+        options: [
+            {
+                text: ">>",
+                nextText: 77
+            }
+        ]
+    },
+    {
+        id: 77,
+        question: "Indeed, you look over your shoulder, and a shadowy figure looms about twenty feet back. You start walking a little faster.",
+        options: [
+            {
+                text: ">>",
+                nextText: 78
+            }
+        ]
+    },
+    {
+        id: 78,
+        question: "You're at your car, fumbling in your pockets for your keys now. You suddenly can't remember where exactly it was that you put them.",
+        options: [
+            {
+                text: ">>",
+                nextText: 79
+            }
+        ]
+    },
+    {
+        id: 79,
+        question: "\"Hey!\" You hear the voice behind you, and you jump. You turn and see that the man is holding a knife. You tell him that you really don't want any trouble. He asks you why you stole his beloved prize rabbit.",
+        options: [
+            {
+                text: "> Huh? I never did that.",
+                nextText: 80
+            }
+        ]
+    },
+    {
+        id: 80,
+        question: "He calls you a liar, and then knifes you in the stomach.",
+        options: [
+            {
+                text: "> Collapse.",
+                nextText: 81
+            }
+        ]
+    },
+    {
+        id: 81,
+        question: "The man runs, leaving you to bleed out on the asphalt.",
+        options: [
+            {
+                text: ">>",
+                nextText: 82
+            }
+        ]
+    },
+    {
+        id: 82,
+        question: "You're lying flat on your back, the life draining from your body by the second. You blink up at the sky, and your eyes briefly focus. You realize that you've never noticed how many stars are actually visible in the night.",
+        options: [
+            {
+                text: ">>",
+                nextText: 83
+            }
+        ]
+    },
+    {
+        id: 83,
+        question: "You let your eyes flutter shut. As Camus' protagonist Mersault once did before you, you open yourself up to the gentle indifference of the world. Years ago, you had spontaneously decided to respond to a newspaper ad for a job, and now, because of that very choice, you're paying the price for some sort of feud between two people that you never knew and now never will. There was so much that you didn't accomplish in your life. You never married, never had kids, never got a real respectable job that would make your parents proud. Yet in the end, you can confidently say that you knew true happiness. You let that thought wash over you in your final moments.",
+        options: [
+            {
+                text: ">> END.",
+                nextText: -5
+            }
+        ]
+    },
+    // END
+    {
+        id: 84,
+        question: "You decide that you're just too young to keep doing this. Not without guilt, you close the business and find a job bagging groceries.",
+        options: [
+            {
+                text: ">> Get older.",
+                nextText: 85
+            }
+        ]
+    },
+    {
+        id: 85,
+        question: "Your new job is easier but also kind of harder because who knew that the average grocery store customer is actually a lot more disrespectful than the average person paying to get their rabbit styled. Also mostly it's just boring because it's so much of the same thing day after day.",
+        options: [
+            {
+                text: ">> Get older.",
+                nextText: 86
+            }
+        ]
+    },
+    {
+        id: 86,
+        question: "One day, you decide that you've had enough and you quit. You realize that you actually kind of preferred working with animals so you decide to start walking people's dogs.",
+        options: [
+            {
+                text: ">> Get older.",
+                nextText: 87
+            }
+        ]
+    },
+    {
+        id: 87,
+        question: "After doing it for a little while, you've found yourself with a bit of spare cash. You start spending your weekends going out and drinking.",
+        options: [
+            {
+                text: ">> Get older.",
+                nextText: 88
+            }
+        ]
+    },
+    {
+        id: 88,
+        question: "You're getting kind of bored of the dog walking thing but you're not really sure what else you would do at this point so you just keep doing it. One night, you're walking the dogs in the woods by your house as you normally do, but then you realize that you took a weird turn at some point and you're actually kind of lost.",
+        options: [
+            {
+                text: ">>",
+                nextText: 89
+            }
+        ]
+    },
+    {
+        id: 89,
+        question: "You notice that the dogs have gotten a little antsy. They're sniffing around in the brush, hesitant to go any further.",
+        options: [
+            {
+                text: ">>",
+                nextText: 90
+            }
+        ]
+    },
+    {
+        id: 90,
+        question: "There's a sudden rustle in the trees, and you jump. The dogs start growling.",
+        options: [
+            {
+                text: ">>",
+                nextText: 91
+            }
+        ]
+    },
+    {
+        id: 91,
+        question: "The next moment, you're face to face with some sort of enormous beast. Its eyes glisten at you in the darkness. The dogs wrestle out of your grip and run off into the woods.",
+        options: [
+            {
+                text: ">>",
+                nextText: 92
+            }
+        ]
+    },
+    {
+        id: 92,
+        question: "Well, you suppose this is it for you. It was nice while it lasted.",
+        options: [
+            {
+                text: ">>",
+                nextText: -6
+            }
+        ]
+    },
     // {
     //     id: ,
     //     question: "",
