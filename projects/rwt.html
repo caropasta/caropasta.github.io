@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Radioactive Waste Training</title>
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      *, *::before, *::after {
+        color: #ffffff;
+        background-color: #0B5666;
+      }
+
+      #name {
+        color: #5FFFBC;
+      }
+
+      #about, #projects, #resume, #linkedin {
+          color: #ffffff;
+        }
+
+      #name:hover, #about:hover, #projects:hover, #resume:hover, #linkedin:hover {
+        color: #22e7fd;
+        text-decoration: none;
+      }
+
+      .project a:link, .project a:visited {
+        color: #5FFFBC;
+      }
+
+      .project-title, .subtitle, .section-header {
+        color: #5FFFBC;
+      }
+
+      .project a:hover{
+        color: #22e7fd;
+        text-decoration: dotted underline;
+      }
+
+      ::selection {
+        color: #0B5666;
+        background-color: #22e7fd;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="heading">
+        <div class="nav">
+          <div><a id="name" href="../index.html">Caroline Pastrano</a></div>
+          <div><a id="about" href="../index.html">about</a></div>
+          <div><a id="projects" href="portfolio.html">projects</a></div>
+          <div><a id="resume" href="Caroline Pastrano Resume 2024 Fall.pdf" target="_blank">resume</a></div>
+          <div><a id="linkedin" href="https://www.linkedin.com/in/caroline-pastrano-1569a0255/" target="_blank" rel="noreferrer">linkedin</a></div>
+        </div>
+      </div>
+
+      <div class="project">
+        <div style="align-self: flex-start;"><a href="../portfolio.html">&#8592 Back to projects</a></div>
+
+        <div class="project-title">Radioactive Waste Training</div>
+        <div class="subtitle">October &#8211 December 2023</div>
+        <div class="description" style="text-align: center; width:100%">An indie dungeon crawler video game and a love letter to my time working in biochemistry labs</div>
+        <img src="rwt/image 1.png">
+
+        <div class="section">
+          <div class="description">I designed and developed this game with a team of four in about two months for the UT class Elements of Game Development, working in the Godot 4 engine. It is a dungeon crawler style role-playing game with procedurally generated maps, where the aim is to escape from a dangerous abandoned laboratory.</div>
+          <div class="description" style="font-weight: bold; font-size: 24px; align-self: flex-start; color: #5FFFBC">What I did:</div>
+          <div class="description">
+            <li>Developed original game concept and art style</li>
+            <li>Created all visual assets</li>
+            <li>Designed and implemented graphical user interface</li>
+            <li>Collaborated with team on gameplay design and programming</li>
+            <li>Conducted periodic playtesting and user interviews</li>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-header">First Concept</div>
+          <img src="rwt/concept.png">
+          <div class="description">This was the original concept that I pitched to my group. My ideas were vast, and very many of them did not make it into the final game! However, many of the most baseline concepts do show through in the final product, including the basic gameplay mechanics, the setting and environment, and character designs for the player and enemies.</div>
+        </div>
+
+        <div class="section">
+          <div class="section-header">More Concept Sketches and Character Art</div>
+          <img src="rwt/concept2.png">
+          <img src="rwt/rwt_art.png">
+          <div class="description">In the next stage, as my teammates worked on generating the map and the basic characters in Godot, I started fleshing out my design concepts and began thinking about how to translate my ideas into a functional game.</div>
+        </div>
+
+        <div class="section">
+          <div class="section-header">Designing Interactions and the HUD</div>
+          <img src="rwt/image 2.png">
+          <div class="description">Now that my design ideas were more solidified, I had to figure out how these would translate into proper game interactions. The most important part of this step was effectively designing and implementing character animations that were properly visually responsive to user input. Check out some of these animations below:
+            <br><br>
+            I also started thinking more about the HUD in this stage. Similarly to character animations, I had to figure out how best to visually convey changes in the game state that occurred in response to user actions. One of the biggest challenges I faced implementing the HUD was matching the visual style of the game and following video game conventions while also making information clear and easy to recognize.
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-header">Working with Developers</div>
+          <img src="rwt/image 4.png">
+          <div class="description">I worked closely with the developers throughout the design process. I had to learn how to adapt my workflow to what they needed, often rearranging my order of tasks, as the development flow was fast-paced enough that ideation and development were often occurring concurrently. I also had to adapt many of my design ideas to fit the limitations of what the developers could manage to implement within the game engine.</div>
+        </div>
+
+        <div class="section">
+          <div class="section-header">User Testing</div>
+          <img src="rwt/image 3.png">
+          <div class="description">We conducted several phases of user testing throughout the development process. During these sessions, we observed users as they attempted to play our game, taking note of game difficulty, effectiveness of visual communication, and any other issues that may have arisen. Afterwards, we presented the users with a series of post-test questions and asked them for suggestions on what would make the game more enjoyable for them. After each round of user testing, we went back and determined how to incorporate what we learned into the next phase of development.</div>
+        </div>
+
+        <div class="section">
+          <div class="section-header">Final Takeaways</div>
+          <div class="description">As this was the first major interaction design project that I ever undertook, there was a whole lot that I learned, as well as things that I would do very differently if I could go back now!</div>
+          <div class="description" style="font-weight: bold; font-size: 24px; align-self: flex-start; color: #5FFFBC">What I learned:</div>
+          <div class="description">
+            <li>Designing for interactivity requires many special considerations for how users will interact with your product.</li>
+            <li>It is crucial to conduct user testing at each stage in the development process in order to stay in touch with the needs of your userbase. You should never assume that you know what a user wants or needs.</li>
+            <li>It is important to design with developers in mind and to maintain clear communication with them throughout the design process.</li>
+            <li>Design, especially game design, requires you to bring together considerations from the two often competing fields of convention and legibility.</li>
+            <li>If I were to do a project like this again, I would absolutely start with a cohesive design system and much more preliminary prototyping.</li>
+          </div>
+          <br>
+          <div class="description" style="font-weight: bold;">Play the game <a href="https://team-7-ut.itch.io/radioactive-waste-training" target="_blank">here</a>!</div>
+        </div>
+
+        <br>
+        <div style="align-self: flex-start;"><a href="../portfolio.html">&#8592 Back to projects</a></div>
+      </div>
+    </div>
+  </body>
+
+</html>

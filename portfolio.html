@@ -1,42 +1,71 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CAROLINE'S PORTFOLIO</title>
+    <title>Projects</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      #name {
+        color:#27B288;
+      }
+
+      #name:hover {
+        color:#FF2D9E;
+        text-decoration: none;
+      }
+
+      .subtitle {
+        color: #27B288;
+      }
+
+      ::selection {
+          color: #ffffff;
+          background-color: #E6007A;
+      }
+    </style>
   </head>
 
   <body>
-    <h1>CAROLINE'S PORTFOLIO</h1>
-    <table>
-        <tr>
-            <td><img src="title.png" style="width:300px"></td>
-            <td><div class="header">Radioactive Waste Training</div>
-                <p>An indie dungeon crawler video game developed with a team of four at UT Austin. Play as a creature born out of radioactive waste and attempt to escape from an abandoned laboratory crawling with radioactive enemies! Features a procedurally generated map so that no two runs are exactly the same. Created using the Godot 4 engine.</p>
-                <p><a href="rwt.html">See more</a></p>
-            </td>
-        </tr>
-        <tr>
-            <td><img src="capmetro.png" style="width:300px"></td>
-            <td><div class="header">CapMetro Usability Study</div>
-                <p>A usability study conducted on the app for CapMetro, Austin's premier public transportation service. Consists of a heuristic evaluation, competitive analysis, comprehensive user testing, and final insights and recommendations.</p>
-                <p><a href="CapMetro Final Report.pdf">See more</a></p>
-            </td>
-        </tr>
-        <tr>
-            <td><img src="logo.png" style="width:300px"></td>
-            <td><div class="header">The Gentle Indifference of the World</div>
-                <p>A website designed to teach the user about the 20th century philosophical movement of existentialism. Features a text roleplaying game that simulates a human life and a page summarizing the contributions of major figures within the movement.</p>
-                <p><a href="exist.html">See more</a></p>
-            </td>
-        </tr>
-        <tr>
-            <td><img src="design.png" style="width:300px"></td>
-            <td><div class="header">Visual Design and Development</div>
-                <p>A collection of works created using Figma, Adobe Illustrator, Procreate, and Clip Studio Paint.</p>
-                <p><a href="design.html">See more</a></p>
-            </td>
-        </tr>
-    </table>
+    <div class="main">
+      <div class="heading">
+        <div class="nav">
+          <div><a id="name" href="index.html">Caroline Pastrano</a></div>
+          <div><a id="about" href="index.html">about</a></div>
+          <div><a id="projects" href="portfolio.html">projects</a></div>
+          <div><a id="resume" href="Caroline Pastrano Resume 2024 Fall.pdf" target="_blank">resume</a></div>
+          <div><a id="linkedin" href="https://www.linkedin.com/in/caroline-pastrano-1569a0255/" target="_blank" rel="noreferrer">linkedin</a></div>
+        </div>
+      </div>
+
+      <div class="container">
+          <a href="projects/capmetro.html"><img src="capmetro.png"></a>
+          <div>
+            <div class="title"><a href="projects/capmetro.html">CapMetro Usability Study</a></div>
+            <div class="subtitle">September &#8211 December 2024</div>
+            <div class="description">A usability study conducted on the app for CapMetro, Austin's premier public transportation service. Consists of a heuristic evaluation, competitive analysis, comprehensive user testing, and final insights and recommendations.</div>
+          </div>
+          
+          <a href="projects/rwt.html"><img src="title.png"></a>
+          <div>
+            <div class="title"><a href="projects/rwt.html">Radioactive Waste Training</a></div>
+            <div class="subtitle">October &#8211 December 2023</div>
+            <div class="description">An indie dungeon crawler video game developed with a team of four at UT Austin. Play as a creature born out of radioactive waste and attempt to escape from an abandoned laboratory crawling with radioactive enemies! Features a procedurally generated map so that no two runs are exactly the same.</div>
+          </div>
+
+          <a href="projects/tgiotw.html"><img src="logo.png"></a>
+          <div>
+            <div class="title"><a href="projects/tgiotw.html">The Gentle Indifference of the World</a></div>
+            <div class="subtitle">April 2023</div>
+            <div class="description">A website designed to teach the user about the 20th century philosophical movement of existentialism. Features a text roleplaying game that simulates a human life and a page summarizing the contributions of major figures within the movement.</div>
+          </div>
+
+          <a href="projects/design.html"><img src="design.png"></a>
+          <div>
+            <div class="title"><a href="projects/design.html">Art and Visual Design</a></div>
+            <div class="subtitle">2020 &#8211 Present</div>
+            <div class="description">A collection of digital and traditional works of art and visual design.</div>
+          </div>
+      </div>
+    </div>
   </body>
 
 </html>

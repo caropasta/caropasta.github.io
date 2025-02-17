@@ -1,27 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
+
 *, *::before, *::after {
     box-sizing: border-box;
-    font-family: Helvetica, sans-serif;
-    background-color: #DAEED3;
+    font-family: "Inter", sans-serif;
+    color: #1a1b1c;
 }
 
 body {
-    margin-top: 80px;
-    margin-left: 100px;
-    margin-right: 500px;
-    color: #2a3231;
+    margin: 5vw;
+    margin-top: 3vw;
+    width: 90vw;
+    color: #1a1b1c;
 }
 
-.header {
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.heading {
+    display: flex;
+    width: 90%;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: "Schibsted Grotesk", sans-serif;
+}
+
+.project-title {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.subtitle {
     font-size: 22px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.section-header {
+    font-size: 32px;
+    font-weight: bold;
+    align-self: flex-start;
+    text-align: start;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    row-gap: 6%;
+    column-gap: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.container img {
+    width: 350px;
+}
+
+.container .description {
+    width: 65%;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    width: 55%;
+    gap: 15px;
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    gap: 10px;
+}
+
+.description {
+    font-size: 18px;
+    text-align: left;
+}
+
+#name {
+    font-size: 70px;
+    font-family: "Schibsted Grotesk", sans-serif;
+    font-weight: 800;
+}
+
+#about {
+    color:#256EFC;
+    text-align: center;
+}
+
+#projects {
+    color:#27B288;
+    text-align: center;
+}
+
+#resume {
+    color:#FF2D9E;
+    text-align: center;
+}
+
+#linkedin {
+    color:#FF624D;
+    text-align: center;
 }
 
 a:link, a:visited {
-    color: #0F9474;
+    color: #1a1b1c;
     text-decoration: none;
 }
 
-table {
-    width: 125%;
-    height: 600px;
-    border-spacing: 30px;
+a:hover {
+    color: #27B288;
+    text-decoration: dotted underline;
+}
+
+@media (max-width: 800px) {
+    .main {
+        align-items: center;
+    }
+
+    .heading {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #name {
+        display: flex;
+        text-align: center;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        width: 90%;
+    }
+
+    .container img {
+        width: 100%;
+    }
+
+    .container .description {
+        width: 100%;
+    }
+
+    .project {
+        width: 90%;
+    }
 }

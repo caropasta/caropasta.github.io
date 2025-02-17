@@ -1,42 +1,49 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CAROLINE PASTRANO</title>
+    <title>Caroline Pastrano</title>
+    <link rel="stylesheet" href="style.css" />
     <style>
-            *, *::before, *::after {
-                box-sizing: border-box;
-                font-family: Helvetica, sans-serif;
-                font-size: 20px;
-                background-color: #DAEED3;
-            }
+      #name {
+        color:#256EFC;
+      }
 
-            body {
-                margin-top: 80px;
-                margin-left: 100px;
-                margin-right: 500px;
-            }
+      #name:hover {
+        color:#27B288;
+        text-decoration: none;
+      }
 
-            a:link, a:visited {
-                color: #0F9474;
-                text-decoration: none;
-            }
-
+      ::selection {
+        color: #ffffff;
+        background-color: #1ba77d;
+      }
     </style>
   </head>
 
   <body>
-    <h1>CAROLINE PASTRANO</h1>
-    <p>Designer, programmer, and researcher with a background in the natural sciences. Currently pursuing a Master of Science in UX and HCI from The University of Texas at Austin.</p>
-    
-    <table style="width:450px">
-      <tr>
-        <td>about</td>
-        <td><a href="portfolio.html">portfolio</a></td>
-        <td><a href="Caroline Pastrano Resume 2024 Fall.pdf">resume</a></td>
-        <td>contact</td>
-      </tr>
-    </table>
-      
+    <div class="main">
+      <div class="heading">
+        <div class="nav">
+          <div><a id="name" href="index.html">Caroline Pastrano</a></div>
+          <div><a id="about" href="index.html">about</a></div>
+          <div><a id="projects" href="portfolio.html">projects</a></div>
+          <div><a id="resume" href="Caroline Pastrano Resume 2024 Fall.pdf" target="_blank">resume</a></div>
+          <div><a id="linkedin" href="https://www.linkedin.com/in/caroline-pastrano-1569a0255/" target="_blank" rel="noreferrer">linkedin</a></div>
+        </div>
+      </div>
+
+      <div class="container"><img src="image3.jpg" id="profile">
+          <div>
+            <div class="description">
+              <p>I am a current first year MS student in the Information Studies program at the University of Texas, with a focus on user experience and human-computer interaction. After earning my BS in Neuroscience from UT in May of 2024, I decided to embark on a new journey in UX research and design, inspired by my love for research, technology, and people.</p>
+
+              <p>I am always thinking about ways to create better interactive experiences for people on the web. Some of the UX design principles that I value the most are strong, cohesive design vision, human-centeredness, and the dual considerations of utility and joyfulness. I am also always working to improve my skills in user research, visual design, and front-end web development.</p>
+              
+              <p>Currently seeking internships for Summer and Fall 2025!</p>
+            </div>
+          </div>
+      </div>
+    </div>
   </body>
 
 </html>
