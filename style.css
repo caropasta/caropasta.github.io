@@ -137,7 +137,7 @@ a:hover {
     text-decoration: dotted underline;
 }
 
-@media (max-width: 800px) {
+@media (min-width:320px) and (max-width: 800px) {
     .main {
         align-items: center;
     }
