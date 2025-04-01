@@ -12,6 +12,7 @@ body {
     width: 90vw;
     max-width: 1800px;
     color: #1a1b1c;
+    line-height: 1.3;
 }
 
 .main {
@@ -110,6 +111,19 @@ body {
     text-align: left;
 }
 
+.gallery {
+    display: grid;
+    width: 130%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    align-items: center;
+    justify-items: center;
+}
+
+.gallery img {
+    width: 100%;
+}
+
 #name {
     font-size: 70px;
     font-family: "Schibsted Grotesk", sans-serif;
@@ -171,6 +185,11 @@ a:hover {
         grid-template-columns: 1fr;
         gap: 10px;
         width: 90%;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        width: 90%
     }
 
     .container img {
