@@ -67,6 +67,7 @@ body {
     column-gap: 3%;
     margin-left: 5%;
     margin-right: 5%;
+    border-radius: 5%;
 }
 
 .container img {
@@ -75,6 +76,30 @@ body {
 
 .container .description {
     width: 65%;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 3%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.container2 img {
+    width: 350px;
+}
+
+.container2:hover {
+    background-color: #e0f2e9;
+}
+
+.projects-box {
+    display: flex;
+    flex-direction: column;
+    width: 71%;
+    margin-left: 5%;
+    gap: 30px;
 }
 
 .project {
@@ -164,7 +189,7 @@ a:hover {
     text-decoration: dotted underline;
 }
 
-@media (min-width:320px) and (max-width: 800px) {
+@media (min-width:320px) and (max-width: 1000px) {
     .main {
         align-items: center;
     }
@@ -191,6 +216,22 @@ a:hover {
         width: 90%;
     }
 
+    .container2 {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .container2 img {
+        width: 100%;
+    }
+
+    .projects-box {
+        width: 95%;
+        margin-left: 0%;
+        align-self: center;
+        align-items: center;
+    }
+
     .gallery {
         grid-template-columns: 1fr;
         width: 90%
@@ -205,6 +246,6 @@ a:hover {
     }
 
     .project {
-        width: 90%;
+        width: 95%;
     }
 }
