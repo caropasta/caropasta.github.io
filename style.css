@@ -229,6 +229,7 @@ a:hover {
     #name {
         display: flex;
         text-align: center;
+        align-self: center;
     }
 
     .nav {

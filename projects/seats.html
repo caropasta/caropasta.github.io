@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SEATS</title>
+    <link rel="stylesheet" href="../style2.css" />
+    <style>
+      #name:hover {
+        color: #156159;
+      }
+
+      #name, #about, #projects, #resume, #linkedin, h3 {
+        color: #1a1b1c;
+      }
+
+      body {
+        background-color: #7ebba5;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="heading">
+      <a id="name" href="../index.html">Caroline Pastrano</a>
+      <div class="nav">
+        <div><a id="about" href="../index.html">about</a></div>
+        <div><a id="projects" href="../portfolio.html">projects</a></div>
+        <div><a id="resume" href="../Caroline Pastrano Resume 2024 Fall.pdf" target="_blank">resume</a></div>
+        <div><a id="linkedin" href="https://www.linkedin.com/in/caroline-pastrano-1569a0255/" target="_blank" rel="noreferrer">linkedin</a></div>
+      </div> 
+    </div>
+
+    <div class="project">
+      <div class="project-section">
+        <div><a href="../portfolio.html">&#8592 Back to projects</a></div>
+        <div class="main-section" style="gap: 0">
+          <h1>SEATS</h1>
+          <h3>An ongoing project to improve the UT event scheduling web app SEATS through iterative user testing and design changes.</h3>
+        </div>
+      </div>
+
+      <div class="project-section">
+        <div class="main-section">
+          <h2>The Problem</h2>
+          <p>SEATS is a UT web app for scheduling events and monitoring attendance, used by many staff and student educators at the university including myself. As an app that has been around for a while, its usage has shifted over time so that many of its functions are now archaic or difficult to use.</p>
+        </div>
+      </div>
+
+      <div class="project-section">
+        <div class="main-section">
+          <h2>My Solution</h2>
+          <p>This is my first major project with the UT undergraduate college web development team. By working with SEATS users and the development team behind it, I hope to implement design changes that make the app more usable for those who rely on it.</p>
+        </div>
+      </div>
+
+      <div class="project-section">
+        <div class="main-section">
+          <h2>I. SEATS Introduction</h2>
+          <p>SEATS is a web app used by UT's Sanger Learning Center for supplemental education and tutoring. Its features can be broken down into three main categories:</p>
+          <h3>Creating and editing events</h3>
+          <img src="seats/add event.png" style="width: 70%">
+          <p>Users can create events for themselves or for others and edit preexisting events.</p>
+          <br>
+
+          <h3>Searching for events</h3>
+          <img src="seats/search.png" style="width: 70%">
+          <p>Users can search for events using specific parameters, and can download data from these searches in order to perform analytics.</p>
+          <br>
+
+          <h3>Taking event attendance</h3>
+          <img src="seats/attendance.png" style="width: 70%">
+          <p>Users can record event attendance by checking in students with their UT EIDs.</p>
+        </div>
+      </div>
+
+      <div class="project-section">
+        <div class="main-section">
+          <h2>II. User Testing</h2>
+          <p>I outlined eight tasks spanning all three categories of features. I then conducted five moderated user tests with Sanger Learning Center staff, each with varying levels of experience with SEATS.
+            <br><br>
+            I had the users utilize a think-aloud process, and followed up with both post-task and post-test questions in order to dive deeper into their feelings about the experience. After all tests were completed, I used affinity mapping to discover insights.
+        </p>
+        <br>
+        <img src="seats/affinity mapping.png">
+        </div>
+      </div>
+
+      <div class="project-section">
+        <div class="main-section">
+          <h2>III. Design Changes</h2>
+          <p>After analyzing results from user testing, I presented my findings to the UT web dev team and made design recommendations based on what I discovered. The improvement process is still ongoing, but here are some changes that have been implemented so far:</p>
+          <br>
+          <h3>Adding an event</h3>
+          <img src="seats/test1.png">
+          <p>Users thought that the search box at the top of the landing page was for creating a new event. To prevent confusion, I recommended making the "Add Event" button at the top more prominent, through both visual design and verbiage changes.</p>
+          <br>
+          <h3>Checking in students</h3>
+          <img src="seats/test2.png">
+          <p>Users were confused that the QR code check-in button was not in the same place as the other check-in options. I recommended moving this button into the menu with the other options.</p>
+          <br>
+          <h3>Preventing invalid entries</h3>
+          <img src="seats/test3.png" style="width:70%">
+          <p>Users who perform analytics on SEATS data expressed difficulty in cleaning data when entries contained errors. I recommended preventing invalid entries in text entry boxes, such as only allowing course department codes that are found in a list of all UT department codes.</p>
+        </div>
+      </div>
+
+      <div class="project-section">
+        <div class="main-section">
+          <h2>IV. Next Steps</h2>
+          <p>Going forward, I will continue working with the web development team to implement rolling changes to the SEATS platform, which includes more rounds of user testing as part of an iterative design process!</p>
+        </div>
+      </div>
+        
+
+
+    </div>
+
+
+  </body>
+
+
+</html>

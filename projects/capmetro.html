@@ -3,135 +3,168 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CapMetro Usability Study</title>
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../style2.css" />
     <style>
-      *, *::before, *::after {
-        color: #1a1b1c;
+
+      body {
+        background-color: #d2e7f6;
       }
 
-      #name {
-        color: #1a8dd4;
-      }
-
-      #about, #projects, #resume, #linkedin {
-        color: #0967a2;
-      }
-
-      .subtitle, .section-header {
-        color: #0967a2;
+      #name, #about, #projects, #resume, #linkedin, h3 {
+        color: #0a5c8f;
       }
 
       #name:hover {
-        color: #cde673;
-        text-decoration: none;
+        color: #064166;
       }
 
-      .project a:link, .project a:visited {
-        color: #1a8dd4;
-      }
-
-      .project a:hover {
-        background-color: #dff399;
-        text-decoration: none;
-      }
-
-      ::selection {
-        background-color: #dff399;
-        color: #000000;
-      }
 
     </style>
   </head>
 
   <body>
-    <div class="main">
-      <div class="heading">
-        <div class="nav">
-          <div><a id="name" href="../index.html">Caroline Pastrano</a></div>
-          <div><a id="about" href="../index.html">about</a></div>
-          <div><a id="projects" href="../portfolio.html">projects</a></div>
-          <div><a id="resume" href="../Caroline Pastrano Resume 2024 Fall.pdf" target="_blank">resume</a></div>
-          <div><a id="linkedin" href="https://www.linkedin.com/in/caroline-pastrano-1569a0255/" target="_blank" rel="noreferrer">linkedin</a></div>
+   <div class="heading">
+      <a id="name" href="../index.html">Caroline Pastrano</a>
+      <div class="nav">
+        <div><a id="about" href="../index.html">about</a></div>
+        <div><a id="projects" href="../portfolio.html">projects</a></div>
+        <div><a id="resume" href="../Caroline Pastrano Resume 2024 Fall.pdf" target="_blank">resume</a></div>
+        <div><a id="linkedin" href="https://www.linkedin.com/in/caroline-pastrano-1569a0255/" target="_blank" rel="noreferrer">linkedin</a></div>
+      </div> 
+    </div>
+
+    <div class="project">
+
+      <div class="project-section">
+        <div><a href="../portfolio.html">&#8592 Back to projects</a></div>
+        <div class="main-section" style="gap: 0">
+          <h1>CapMetro Usability Study</h1>
+          <h3 style="align-self: center;">A comprehensive usability study on the CapMetro public transportation app.</h3>
         </div>
       </div>
 
-      <div class="project">
-
-        <div class="title-section">
-          <div style="align-self: flex-start;"><a href="../portfolio.html">&#8592 Back to projects</a></div>
-    
-          <div class="project-title">CapMetro Usability Study</div>
-          <div class="subtitle">September &#8211 December 2024</div>
-          <div class="description" style="text-align: center">User testing, heuristic evaluation, competitive analysis</div>
-          <img src="../capmetro2.png">
-
-          <div class="section">
-            <div class="description">CapMetro provides public transportation services for Austin and the greater Central Texas area. My team conducted a usability study on the CapMetro mobile app in order to discover how they can better serve their users.</div>
-            <div class="description" style="font-weight: bold; font-size: 24px; align-self: flex-start; color: #0967a2">What I did:</div>
-            <div class="description">
-              <li>Conducted a preliminary heuristic evaluation and competitive analysis</li>
-              <li>Created a screener to find the optimal participants for this study</li>
-              <li>Devised user testing tasks and conducted seven user tests</li>
-              <li>Summarized findings and recommendations in a final report</li>
-            </div>
-
-            <div class="description" style="font-weight: bold; font-size: 24px; align-self: flex-start; color: #0967a2">Why:</div>
-            <div class="description">Many different populations in and around Austin rely on the CapMetro transit system, but its app is less than reliable. Through a methodical usability study, we uncovered many specific improvements that can be made in order to make this app more usable.</div>
-          </div>
+      <div class="project-section">
+        <div class="main-section">
+          <h2>The Problem</h2>
+          <p>CapMetro provides essential public transportation services for Austin and its surrounding areas. The CapMetro app is the only way for riders to access real-time route updates and purchase tickets ahead of time, yet is quite difficult to learn for a first time user.</p>
         </div>
+      </div>
 
-        <div class="section">
-          <div class="section-header">Heuristic Evaluation</div>
+      <div class="project-section">
+        <div class="main-section">
+          <h2>Our Solution</h2>
+          <p>My team conducted a comprehensive usability study on the CapMetro app, including a heuristic evaluation, competitive analysis, and user testing, eventually producing a detailed list of recommendations to improve the user experience of the app.</p>
+        </div>
+      </div>
+
+      <div class="project-section">
+        <div class="main-section">
+          <h2>I. Heuristic Evaluation</h2>
+          <p>Our first steps were to conduct a heuristic evaluation and a competitive analysis so that we could figure out what to focus on for our user testing. One area that I focused on within the heuristic evaluation was the User Control and Freedom heuristic:</p>
+        </div>
+      </div>
+
+      <div class="project-section">
+        <h3>When searching for a route in the trip planner screen, the initial results view is cluttered with unnecessary information.</h3>
+        <div class="main-section">        
           <img src="capmetro/he1.png">
-          <div class="description">Our first step was to conduct a heuristic evaluation of the CapMetro app, identifying weaknesses and particular areas of concern using the Nielsen Norman list of usability heuristics. For this task, I primarily focused on evaluating the User Control and Freedom heuristic.</div>
         </div>
+        <h3 style="align-self: center;">However, it is difficult to find an important feature like the trip map.</h3>
+      </div>
 
-        <div class="section">
-          <div class="section-header">Competitive Analysis</div>
-          <img src="capmetro/ca1.png">
-          <img src="capmetro/ca2.png">
-          <div class="description">Next, we conducted a competitive analysis on three direct and three indirect competitors to the CapMetro app. In this stage, I worked with my team to select companies and criteria for analysis and then performed a deep dive on the DoorDash app. We then produced a series of potential recommendations for the CapMetro app based on findings from its competitors.</div>
+      <div class="project-section">
+        <div class="main-section">
+          <p>Here is one example of a usability problem I found in this area: when searching for a route using the Trip Planner tab, the initial results screen is cluttered with unnecessary information, while it is difficult to find something more relevant such as the trip map. My recommendation was then to collapse all the small text on the initial results screen and to display the map on the first “Trip Details” screen.</p>        
         </div>
+      </div>
 
-        <div class="section">
-          <div class="section-header">Screener</div>
-          <div class="description">After completing our preliminary findings, we went on to create a screener to find optimal participants for our study. The screener includes questions regarding general demographics, location, and lifestyle, with a focus on transportation use. When making the screener, we took care to not reveal the purpose of the study too early so as not to bias respondents.</div>
-        </div>
-
-        <div class="section">
-          <div class="section-header">User Testing</div>
-          <div class="description">We were now finally able to move on to the user testing stage. We devised seven tasks for our users to complete, created a moderator script and user forms, and then completed six in-person user tests as well as a pilot. For the user tests, my teammates and I took turns in the roles of moderator, notetaker, and filmmaker.
-            <br><br>
-            For each test, we first had the user answer a few preliminary questions, and then jumped right into the tasks, guided by the moderator. We provided them with a <a href="https://forms.gle/RHgc3GVEWBksCLcD8">form</a> that had task instructions in written form as well as post-task questions for them to answer. After they completed all the tasks, we directed them to another form with post-test questions regarding their overall experience with the app.
+      <div class="project-section">
+        <div class="main-section">
+          <h2>II. Competitive Analysis</h2>
+          <p>We evaluated six competitors for our competitive analysis. For this, I focused on the DoorDash app, an indirect competitor to CapMetro as a food delivery app. Here is one recommendation I made for CapMetro based on the DoorDash app:</p>
+          
+          <div class="two-column">
+            <img src="capmetro/ca2.png" style="max-height: 405px; object-fit: scale-down;">
+            <h3>The CapMetro app has a feature showing Points of Interest that the user may want to explore, but this is hidden within an obscure options menu.</h3>
+          </div>
+          
+          <div class="two-column">
+            <img src="capmetro/ca1.png" style="max-height: 405px; object-fit: scale-down;">
+            <h3>In contrast, the DoorDash app has large icons representing specific delivery categories for the user to browse. This menu is displayed prominently on the front page.</h3>
           </div>
         </div>
+      </div>
 
-        <div class="section">
-          <div class="section-header">Final Report</div>
-          <img src="capmetro/affinity map.png">
-          <img src="capmetro/final.png">
-          <div class="description">Finally, we analyzed the results of our user testing and compiled all of our findings and recommendations into a final report. We used affinity mapping to find common themes throughout all of our user tests and discovered many potential improvements to be made to the CapMetro app.
+      <div class="project-section">
+        <div class="main-section">
+          <h2>III. User Testing</h2>
+          <p>We began our user testing process with a screener to find participants with a mix of experiences with both the CapMetro transit system in general and the CapMetro mobile app specifically.
             <br><br>
-            For the final report, I conducted a deep dive analysis on the fourth task, which consisted of finding a bus route to a specific location. I also performed a quantitative analysis on the data as a whole, obtaining a system usability score of 44.8/100, which is subpar compared to the industry average of 68.
-          </div>
+            We then conducted moderated user tests with the five participants we found. We began each session with a short interview to collect even more details about their experience with CapMetro,
+            and then we had the users complete five tasks within the app that we had outlined ahead of time, utilizing a think-aloud process.
+            <br><br>
+            Once we had completed all testing sessions, we sat down and produced summaries of our findings for each task. Here is an example that I worked on:
+          </p>
         </div>
+      </div>
 
-        <div class="section">
-          <div class="section-header">Final Takeaways</div>
-          <div class="description">This was the first usability study that I ever completed from start to finish, and I learned a lot about all of the considerations that must go into a report like this.</div>
-          <div class="description" style="font-weight: bold; font-size: 24px; align-self: flex-start; color: #0967a2">What I learned:</div>
-          <div class="description">
-            <li>Assessing your market and competitors is essential in a usability study to be sure that your product is able to match the competition.</li>
-            <li>Expert evaluations and user testing go hand in hand, as the former allows for the focused tackling of problem areas and the latter allows you to see how real users experience these issues.</li>
-            <li>Properly conducting user testing involves taking a backseat and letting the user guide you to where they want to go.</li>
-            <li>It takes a lot of work to assess user testing outcomes and derive results, but the final product is worth it!</li>
+      <div class="project-section">
+        <div class="main-section" style="padding: 10px;">
+          <h3>Task 4: Finding a route to a specific location</h3>
+          <p>Goal: Users will locate the HEB Hancock location, and then identify a specific bus route that they can take to that location.</p>
+          <h3>Results:</h3>
+          <img src="capmetro/usertest.png">
+          <h3>Insights:</h3>
+          <ul>
+            <li>Most users were able to completely the task successfully but only after making a few errors, which suggests that the app does not provide the user with a clear pathway to complete this task.</li>
+            <li>Many initially gravitated to the “Next Departure” tab, but this was the incorrect destination for this task.</li>
+          </ul>
+          <h3>Recommendations:</h3>
+          <ul>
+            <li>Consider consolidating Next Departure and Trip Planner, or make their functions distinct enough to differentiate quickly.</li>
+            <li>Make it more obvious that you can search for specific destinations as opposed to only bus stops.</li>
+          </ul>
+        
+        </div>
+      </div>
+
+      <div class="project-section">
+        <div class="main-section">
+          <h2>IV. Final Report</h2>
+          <p>We consolidated our findings from each of the previous steps into a final report of all insights and recommendations. A summary of our findings:</p>
+          <br>
+          <div style="display: flex; gap: 10px;">
+            <h3 style="color:#1a1b1c">Some essential functions feel “hidden” in the app, such as map view and bus stop walking directions.</h3>
+            <img src="capmetro/arrow-right.svg" style="width: 45px">
+            <h3 style="color:#1a1b1c">Rearrange information hierarchy so that most important features are displayed first or most prominently. Also consider creating a short onboarding tutorial for new users.</h3>          
           </div>
           <br>
-          <div class="description" style="font-weight: bold;">Read the full final report <a href="capmetro/CapMetro Final Report.pdf" target="_blank">here</a>!</div>
+          <div style="display: flex; gap: 10px;">
+            <h3 style="color:#1a1b1c">The ticket-purchasing flow is lengthy and confusing to navigate.</h3>
+            <img src="capmetro/arrow-right.svg" style="width: 45px">
+            <h3 style="color:#1a1b1c">Simplify the ticket-purchasing experience by having all prices and ticket options listed on one screen.</h3>
+          </div>
+          <br>
+          <div style="display: flex; gap: 10px;">
+            <h3 style="color:#1a1b1c">Different functions within the app are difficult to distinguish, e.g. "Next Departure" and "Trip Planner."</h3>
+            <img src="capmetro/arrow-right.svg" style="width: 45px">
+            <h3 style="color:#1a1b1c">Consider combining similar functions and using clearer verbiage in order to reduce confusion.</h3>
+          </div>
+          <br>
+          <div style="display: flex; gap: 10px;">
+            <h3 style="color:#1a1b1c">There are multiple different ways to complete tasks, resulting in unnecessary clutter and confusion regarding what pathway to take.</h3>
+            <img src="capmetro/arrow-right.svg" style="width: 45px">
+            <h3 style="color:#1a1b1c">Create clear, simple pathways for each major task within the app.</h3>
+          </div>
+          <br>
+          <h3>See the full final report <a href ="capmetro/CapMetro Final Report.pdf" target="_blank">here</a>!</h3>
+          
         </div>
-        <div style="align-self: flex-start;"><a href="../portfolio.html">&#8592 Back to projects</a></div>
       </div>
+
     </div>
+    <!-- end of project -->
+
   </body>
 
 </html>
