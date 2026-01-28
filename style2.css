@@ -242,7 +242,7 @@ ul, ol {
     grid-template-columns: 1fr 1fr 1fr;
     width: 95%;
     margin-top: 35px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     gap: 1%;
     align-self: center;
 }
