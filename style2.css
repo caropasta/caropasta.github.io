@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
 
 /* BASICS */
 
 *, *::before, *::after {
     box-sizing: border-box;
-    font-family: "Inter", sans-serif;
+    font-family: "Red Hat Text", sans-serif;
     color: #1a1b1c;
 }
 
@@ -13,96 +13,137 @@ body {
     flex-direction: column;
     align-items: center;
     max-width: 1800px;
-    color: #1a1b1c;
     line-height: 1.3;
-    gap: 10px;
-    margin-bottom: 5vw;
+    margin: 0;
+    background-color: #f7f7f7;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 a:link, a:visited {
     color: #1a1b1c;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 650;
 }
 
 a:hover {
     text-decoration: dotted underline;
 }
 
-img {
-    width: 100%;
-}
-
 /* HEADING */
 
 .heading {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 100%;
-    font-weight: bold;
-    font-size: 16px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #f1efef;
+    border-bottom: 1px solid #c4c4c4;
 }
 
 .nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    grid-column-start: 4;
+    font-size: 18px;
 }
 
 #name {
-    color:#0DA776;
-    font-size: 50px;
+    font-size: 40px;
     font-family: "Schibsted Grotesk", sans-serif;
     font-weight: 800;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
 #name:hover {
     text-decoration: none;
 }
 
-#about {
-    color:#1B69FF;
-    text-align: center;
-}
-
 #projects {
-    color:#0DA776;
+    color:#089568;
     text-align: center;
 }
 
 #resume {
-    color:#FF2D9E;
+    color:#1A63EF;
     text-align: center;
 }
 
 #linkedin {
-    color:#FF624D;
+    color:#EF4E4E;
     text-align: center;
 }
 
 /* PROJECT */
+
+.project-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #f1efef;
+    width: 100%;
+    margin: 0;
+    padding: 60px 15%;
+    gap: 25px;
+    align-self: center;
+    align-items: end;
+}
+
+.title {
+    font-size: 48px;
+    font-family: "Schibsted Grotesk", sans-serif;
+    font-weight: 800;
+    line-height: 55px;
+}
 
 .project {
     display: flex;
     flex-direction: column;
     gap: 20px;
     max-width: 100%;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+.project img {
+    width: 100%;
+}
+
+.project h2 {
+    font-style: normal;
+}
+
+.project h3 {
+    font-style: normal;
+}
+
+.project-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
 }
 
 .project-section {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     gap: 25px;
-    padding-left: 16%;
-    padding-right: 16%;
+    padding: 0 10%;
 }
 
 .main-section {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    grid-column: 2;
+}
+
+.top-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
     grid-column: 2;
 }
 
@@ -117,17 +158,19 @@ h1 {
 
 h2 {
     margin: 0;
-    font-size: 40px;
+    font-size: 32px;
     font-family: "Schibsted Grotesk", sans-serif;
-    font-weight: 750;
-    line-height: 45px;
+    font-weight: 700;
+    font-style: italic;
 }
 
 h3 {
     margin: 0;
-    font-size: 19px;
-    font-family: "Schibsted Grotesk", sans-serif;
-    font-weight: 750;
+    font-size: 14px;
+    font-family: "Red Hat Mono", monospace;
+    font-weight: 500;
+    font-style: italic;
+    color: #5F6266;
 }
 
 p {
@@ -155,18 +198,63 @@ ul, ol {
 }
 
 /* PORTFOLIO */
-.projects-box {
-    width: 95%;
-    margin-left: 0%;
-    gap: 10px;
-    align-self: center;
+
+.pg-header {
+    display: flex;
+    flex-direction: column;
+    background-color: #f1efef;
+    text-align: center;
     align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 60px 8%;
+    gap: 25px;
+}
+
+.marquee {
+    background-color: #d5e39a;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+}
+
+.text {
+    font-style: italic;
+    animation: animate_text 30s linear infinite;
+    margin-right: 9px;
+}
+
+.text span {
+    font-family: "Red Hat Mono";
+}
+
+@keyframes animate_text {
+    from {
+      transform: translatex(0);
+    }
+    to {
+      transform: translatex(-100%);
+    }
+}
+
+.projects-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 95%;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    gap: 1%;
+    align-self: center;
 }
 
 .container2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2%;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    gap: 10px;
+    align-self: center;
+    align-items: center;
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
@@ -177,7 +265,7 @@ ul, ol {
 }
 
 .container2:hover {
-    background-color: #e0f2e9;
+    background-color: rgb(230, 245, 170, 0.4)
 }
 
 .bio {
@@ -190,11 +278,28 @@ ul, ol {
     max-width: 60%;
 }
 
+.footer {
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+    justify-content: end;
+    background-color: #25282D;
+    height: 200px;
+    width: 100%;
+    padding: 1% 2%;
+}
+
+.footer span {
+    font-family: "Red Hat Mono";
+    font-size: 14px;
+    color: #babfc4;
+}
+
 @media (min-width:320px) and (max-width: 900px) {
     .heading {
         display: flex;
-        gap: 50px;
         align-items: center;
+        justify-content: space-between;
         width: 100%;
     }
 
@@ -206,10 +311,20 @@ ul, ol {
     #name {
         line-height: 50px;
     }
+    
+    .projects-box {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin-left: 0%;
+        gap: 10px;
+        align-self: center;
+        align-items: center;
+    }
 
     .container2 {
-        grid-template-columns: 1fr;
-        gap: 20px;
+        display: flex;
+        flex-direction: column;
     }
 
     .project-section {
@@ -224,6 +339,17 @@ ul, ol {
         padding: 2vw;
         justify-self: center;
         max-width: 100%;
+    }
+
+    .pg-header {
+        padding: 60px 4%;
+    }
+
+    .project-header {
+        display: flex;
+        flex-direction: column;
+        padding: 60px 4%;
+        align-items: center;
     }
 
 }
